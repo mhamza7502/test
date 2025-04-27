@@ -36,6 +36,7 @@ header {
   justify-content: center;
   align-items: center;
   padding: 1rem 2rem;
+  position: relative;
 }
 
 .nav-links {
@@ -59,6 +60,9 @@ header {
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
 }
 
 .menu-button span {
@@ -90,7 +94,7 @@ header {
   margin-bottom: 20px;
 }
 
-/* Tiles */
+/* Tile Sections */
 .tile {
   padding: 100px 20px;
   max-width: 1200px;
@@ -115,7 +119,7 @@ header {
   font-size: 16px;
 }
 
-/* Card Grid */
+/* Cards for Classes */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -152,6 +156,13 @@ header {
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card:hover .limited-text,
+.card:focus-within .limited-text {
+  -webkit-line-clamp: unset;
+  overflow: visible;
 }
 
 .class-details {
@@ -170,6 +181,34 @@ header {
 
 .card-buttons .btn {
   width: 100%;
+  text-align: center;
+}
+
+/* Buttons */
+.btn {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 22px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 4px 8px rgba(47, 79, 79, 0.2);
+}
+
+.btn:hover {
+  background-color: #1f3f3f;
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(47, 79, 79, 0.3);
+}
+
+/* Footer (you can customize if needed) */
+footer {
+  background-color: var(--footer-background);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
 }
 
 /* Responsive */
@@ -177,14 +216,14 @@ header {
   .nav-links {
     display: none;
     flex-direction: column;
+    background: white;
     position: absolute;
     top: 70px;
-    background: white;
-    width: 200px;
     right: 20px;
     padding: 20px;
     box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     text-align: center;
+    width: 200px;
   }
 
   .nav-links.show {
@@ -193,8 +232,9 @@ header {
 
   .menu-button {
     display: flex;
-    position: absolute;
-    right: 20px;
-    top: 20px;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
   }
 }
