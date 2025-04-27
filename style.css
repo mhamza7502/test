@@ -48,18 +48,18 @@ body {
   text-align: center;
 }
 
-.hero-heading {
+.hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
 }
 
-.hero-subtext {
+.hero p {
   font-size: 20px;
   color: var(--light-text);
   max-width: 800px;
 }
 
-/* Header & Navigation */
+/* Header and Navigation */
 header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
@@ -112,7 +112,7 @@ header {
   background: var(--text-color);
 }
 
-/* Sections */
+/* Sections (Tiles) */
 .tile {
   padding: 100px 20px;
   max-width: 1200px;
@@ -137,7 +137,7 @@ header {
   font-size: 16px;
 }
 
-/* Cards */
+/* Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -170,6 +170,7 @@ header {
   color: #555;
 }
 
+/* Expandable Description */
 .limited-text {
   display: -webkit-box;
   -webkit-line-clamp: 3;
@@ -183,6 +184,7 @@ header {
   overflow: visible;
 }
 
+/* Class Info */
 .class-info {
   margin-top: 10px;
   font-size: 14px;
@@ -229,6 +231,17 @@ header {
 
 .subscribe-form button {
   grid-column: span 2;
+}
+
+/* Scholarship Card */
+.scholarship-card {
+  background: #fff;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+  text-align: center;
 }
 
 /* Footer */
@@ -302,7 +315,11 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .hero-heading {
+  .hero h1 {
     font-size: 32px;
+  }
+
+  .hero p {
+    font-size: 16px;
   }
 }
