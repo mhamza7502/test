@@ -1,114 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ashrafiyya - Islamic Education</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&family=SF+Pro+Display:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashrafiyya - Seeking Knowledge with Adab</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="hero reveal-element">
-    <img src="logo.png" alt="Ashrafiyya Logo" class="hero-logo" />
-    <div class="hero-content">
-      <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
-      <h1 class="reveal-text">Learn. Reflect. Grow.</h1>
-      <p class="reveal-text">At Ashrafiyya, the pursuit of knowledge is a sacred trust. Rooted in Islamic tradition, our mission is to nurture minds and hearts through authentic education, spiritual connection, and sincere action for the sake of Allah ﷻ.</p>
+<!-- Hero Section -->
+<section class="hero">
+  <img src="logo.png" alt="Ashrafiyya Logo" class="hero-logo">
+  <div class="bismillah">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+  <h1 class="hero-heading">Learn. Reflect. Grow.</h1>
+  <p class="hero-subtext">
+    At Ashrafiyya, the pursuit of knowledge is a sacred trust. Rooted in Islamic tradition, our mission is to nurture minds and hearts through authentic education, spiritual connection, and sincere action for the sake of Allah ﷻ.
+  </p>
+</section>
+
+<!-- Navigation -->
+<header>
+  <nav class="nav-container">
+    <div class="menu-button" id="menu-button">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#classes">Classes</a></li>
+      <li><a href="#ethics">Health Ethics</a></li>
+      <li><a href="#scholarship">Scholarship</a></li>
+      <li><a href="#subscribe">Subscribe</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Navigation -->
-  <header>
-    <nav class="nav-container">
-      <div class="nav-links">
-        <a href="#classes">Classes</a>
-        <a href="#ethics">Health Ethics</a>
-        <a href="#scholarship">Scholarship</a>
-        <a href="#subscribe">Subscribe</a>
-      </div>
-      <div class="menu-button">
-        <span></span>
-        <span></span>
-      </div>
-    </nav>
-  </header>
+<!-- Islamic Classes Section -->
+<section id="classes" class="tile">
+  <h2 class="section-title">Islamic Classes</h2>
+  <p class="intro">Authentic courses to deepen your Islamic knowledge.</p>
 
-  <!-- Classes Section -->
-  <section id="classes" class="tile">
-    <h2 class="section-title">Islamic Classes</h2>
-    <p class="intro">Authentic courses rooted in Islamic scholarship, spiritual reflection, and practical guidance.</p>
+  <div class="card-grid">
 
-    <div class="card-grid">
-      <!-- Qur'an Studies -->
-      <div class="card">
-        <h3>Qur'an Studies</h3>
-        <p class="limited-text expandable">
-          Embark on a sacred journey with the Qur’an — mastering the art of Tajweed, experiencing deep Tadabbur (reflection) on its verses, and understanding its timeless themes of Tawheed, Akhlaq, and Akhirah. Guided by the classical Hanafi tafsir tradition, students will not only recite beautifully but live the Qur’an with heart, humility, and devotion.
-        </p>
-        <p class="class-details">
-          <strong>Days:</strong> Monday & Wednesday<br>
-          <strong>Time:</strong> 7:00 PM – 8:30 PM (EST)
-        </p>
-        <div class="card-buttons">
-          <a href="pdfs/quran-studies-details.pdf" class="btn" download>Download Syllabus</a>
-          <a href="#" class="btn">Register</a>
-        </div>
+    <div class="card">
+      <h3>📖 Qur'an Studies</h3>
+      <p class="limited-text">
+        Embark on a sacred journey with the Qur’an — mastering the art of Tajweed, experiencing deep Tadabbur on its verses, and understanding its timeless themes. Guided by the classical tradition, students will not only recite beautifully but live the Qur’an with heart and humility.
+      </p>
+      <div class="class-info">
+        <p><strong>Start Date:</strong> May 15, 2025</p>
+        <p><strong>Days:</strong> Mondays & Thursdays</p>
+        <p><strong>Time:</strong> 7:00 PM – 8:30 PM</p>
       </div>
-
-      <!-- Hadith Studies -->
-      <div class="card">
-        <h3>Hadith Studies</h3>
-        <p class="limited-text expandable">
-          Immerse yourself in the blessed words of Rasulullah ﷺ, exploring the science of Hadith with sincerity and love. This course unveils authentic Hadiths, their spiritual meanings, and their relevance in our modern lives, nurturing within students the beauty of Sunnah, compassion, patience, and moral excellence.
-        </p>
-        <p class="class-details">
-          <strong>Days:</strong> Tuesday & Thursday<br>
-          <strong>Time:</strong> 8:00 PM – 9:30 PM (EST)
-        </p>
-        <div class="card-buttons">
-          <a href="pdfs/hadith-studies-details.pdf" class="btn" download>Download Syllabus</a>
-          <a href="#" class="btn">Register</a>
-        </div>
-      </div>
-
-      <!-- Islamic Fiqh -->
-      <div class="card">
-        <h3>Islamic Fiqh</h3>
-        <p class="limited-text expandable">
-          Strengthen your Islamic foundation by learning the rulings of worship, transactions, and everyday life, rooted in the balanced Hanafi Madhhab. Through a deep spiritual lens, students will discover the mercy behind Islamic law, correct common mistakes, and gain tools to live Islam with adab (etiquette), balance, and wisdom.
-        </p>
-        <p class="class-details">
-          <strong>Days:</strong> Saturday<br>
-          <strong>Time:</strong> 10:00 AM – 12:00 PM (EST)
-        </p>
-        <div class="card-buttons">
-          <a href="pdfs/islamic-fiqh-details.pdf" class="btn" download>Download Syllabus</a>
-          <a href="#" class="btn">Register</a>
-        </div>
-      </div>
-
-      <!-- Islamic History -->
-      <div class="card">
-        <h3>Islamic History</h3>
-        <p class="limited-text expandable">
-          Journey through the golden ages of Islam — from the Prophetic mission to Andalusia to the Ottoman legacy — discovering leadership lessons, scientific advancements, cultural achievements, and revival efforts. This course builds identity, optimism, and pride in belonging to the Ummah of Rasulullah ﷺ.
-        </p>
-        <p class="class-details">
-          <strong>Days:</strong> Sunday<br>
-          <strong>Time:</strong> 11:00 AM – 12:30 PM (EST)
-        </p>
-        <div class="card-buttons">
-          <a href="pdfs/islamic-history-details.pdf" class="btn" download>Download Syllabus</a>
-          <a href="#" class="btn">Register</a>
-        </div>
-      </div>
+      <a href="quran_course.pdf" class="btn" download>Download Syllabus</a>
+      <a href="#" class="btn">Register</a>
     </div>
-  </section>
 
-  <!-- Other sections: Health Ethics, Scholarship, Subscribe, Footer (you keep same as before) -->
+    <div class="card">
+      <h3>🔍 Hadith Studies</h3>
+      <p class="limited-text">
+        Immerse yourself in the blessed words of Rasulullah ﷺ, exploring the science of Hadith with sincerity and love. This course unveils authentic Hadiths, their spiritual meanings, and their relevance in our lives, nurturing the beauty of Sunnah and patience.
+      </p>
+      <div class="class-info">
+        <p><strong>Start Date:</strong> May 20, 2025</p>
+        <p><strong>Days:</strong> Tuesdays</p>
+        <p><strong>Time:</strong> 7:00 PM – 8:30 PM</p>
+      </div>
+      <a href="hadith_course.pdf" class="btn" download>Download Syllabus</a>
+      <a href="#" class="btn">Register</a>
+    </div>
+
+    <div class="card">
+      <h3>⚖️ Islamic Fiqh</h3>
+      <p class="limited-text">
+        Strengthen your Islamic foundation by learning the rulings of worship, transactions, and daily life, rooted in the balanced Hanafi Madhhab. Students will discover the mercy behind Islamic law and practical living with wisdom and adab.
+      </p>
+      <div class="class-info">
+        <p><strong>Start Date:</strong> May 27, 2025</p>
+        <p><strong>Days:</strong> Wednesdays</p>
+        <p><strong>Time:</strong> 6:30 PM – 8:00 PM</p>
+      </div>
+      <a href="fiqh_course.pdf" class="btn" download>Download Syllabus</a>
+      <a href="#" class="btn">Register</a>
+    </div>
+
+    <div class="card">
+      <h3>🕌 Islamic History</h3>
+      <p class="limited-text">
+        Journey through the golden ages of Islam — from the Prophetic mission to Andalusia and beyond — discovering leadership lessons, scientific advancements, and building pride in belonging to the Ummah of Rasulullah ﷺ.
+      </p>
+      <div class="class-info">
+        <p><strong>Start Date:</strong> June 3, 2025</p>
+        <p><strong>Days:</strong> Saturdays</p>
+        <p><strong>Time:</strong> 10:00 AM – 12:00 PM</p>
+      </div>
+      <a href="history_course.pdf" class="btn" download>Download Syllabus</a>
+      <a href="#" class="btn">Register</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Health Ethics Section -->
+<section id="ethics" class="tile alternate">
+  <h2 class="section-title">Health Ethics in Islam</h2>
+  <p class="intro">Study the Islamic principles guiding health, healing, and medical practices with adab and sincerity.</p>
+</section>
+
+<!-- Scholarship Section -->
+<section id="scholarship" class="tile">
+  <h2 class="section-title">Ashrafiyya Scholarship Program</h2>
+  <p class="intro">Support for committed students pursuing Islamic knowledge.</p>
+
+  <div class="card-grid single">
+    <div class="card">
+      <h3>Scholarship Opportunity</h3>
+      <p>Apply for financial support covering tuition fees for eligible students demonstrating academic commitment, service potential, and financial need.</p>
+      <p><strong>Application Deadline:</strong> August 15, 2025</p>
+      <a href="scholarship_details.pdf" class="btn" download>Download Details</a>
+    </div>
+  </div>
+</section>
+
+<!-- Subscribe Section -->
+<section id="subscribe" class="tile alternate">
+  <h2 class="section-title">Stay Connected with Ashrafiyya</h2>
+  <p class="intro">
+    We warmly invite you to stay connected. Kindly share your details. May Allah ﷻ bless your journey of seeking knowledge.
+  </p>
+
+  <form class="subscribe-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Any comments or class interests" rows="3"></textarea>
+    <button type="submit" class="btn">Subscribe</button>
+  </form>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <h4 class="footer-title">Ashrafiyya</h4>
+      <p class="footer-desc">Dedicated to authentic Islamic education and spiritual growth.</p>
+    </div>
+    <div>
+      <h4 class="footer-title">Contact</h4>
+      <p>Email: info@ashrafiyya.org</p>
+      <p>Phone: (123) 456-7890</p>
+    </div>
+    <div>
+      <h4 class="footer-title">Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#ethics">Health Ethics</a></li>
+        <li><a href="#scholarship">Scholarship</a></li>
+        <li><a href="#subscribe">Subscribe</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
 <script src="script.js"></script>
+
 </body>
 </html>
