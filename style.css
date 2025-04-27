@@ -1,15 +1,13 @@
-/* Global Variables */
 :root {
   --primary-color: #2f4f4f;
   --text-color: #1d1d1f;
   --light-text: #86868b;
   --background: #ffffff;
-  --secondary-background: #fafafa; /* Softer light grey */
+  --secondary-background: #fafafa;
   --footer-background: #1d1d1f;
   --animation-timing: 0.6s;
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -23,22 +21,20 @@ body {
   overflow-x: hidden;
 }
 
-/* Header */
+/* Header and Nav */
 header {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(210, 210, 215, 0.3);
   position: sticky;
   top: 0;
   z-index: 1000;
+  border-bottom: 1px solid rgba(210, 210, 215, 0.3);
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
   padding: 1rem 2rem;
 }
 
@@ -71,39 +67,30 @@ header {
   background: var(--text-color);
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   min-height: 90vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 80px 20px 20px;
   text-align: center;
 }
 
-.hero-content {
-  max-width: 800px;
-}
-
 .hero-logo {
   width: 200px;
-  max-width: 90%;
-  margin: 0 auto 30px auto;
-  display: block;
-}
-
-.hero h1 {
-  font-size: 48px;
   margin-bottom: 20px;
 }
 
-.hero p {
-  font-size: 22px;
+.bismillah {
+  font-family: 'Scheherazade New', serif;
+  font-size: 24px;
   color: var(--light-text);
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-/* Section Styles */
+/* Tiles */
 .tile {
   padding: 100px 20px;
   max-width: 1200px;
@@ -128,21 +115,22 @@ header {
   font-size: 16px;
 }
 
-/* Cards */
+/* Card Grid */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 
 .card {
   background: #fff;
-  padding: 24px;
+  padding: 30px;
   border-radius: 16px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-height: 520px;
   text-align: center;
   transition: transform 0.3s;
 }
@@ -152,114 +140,36 @@ header {
 }
 
 .card h3 {
-  font-size: 20px;
+  font-size: 22px;
   margin-bottom: 10px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
-.card p {
+.limited-text {
   font-size: 15px;
   color: #555;
-  margin-bottom: 20px;
-  flex-grow: 1;
-}
-
-/* Limited Text Reveal */
-.limited-text {
+  margin-bottom: 15px;
   display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  transition: all 0.3s ease;
 }
 
-.card:hover .limited-text {
-  -webkit-line-clamp: unset;
-  overflow: visible;
-}
-
-/* Button */
-.btn {
-  background: var(--primary-color);
-  color: white;
-  padding: 10px 22px;
-  border-radius: 999px;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(47, 79, 79, 0.2); /* Slight shadow to pop */
-}
-
-.btn:hover {
-  background-color: #1f3f3f;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(47, 79, 79, 0.3); /* Stronger shadow on hover */
-}
-
-/* Footer */
-footer {
-  background-color: #1d1d1f;
-  color: #e6e6e6;
-  padding: 60px 20px;
-  border-top: 4px solid var(--primary-color);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.footer-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: white;
-}
-
-.footer-desc {
+.class-details {
   font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
   line-height: 1.6;
-  color: #b0b0b0;
 }
 
-footer p,
-footer a {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #cfcfcf;
-  text-decoration: none;
+.card-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: auto;
 }
 
-footer a:hover {
-  color: white;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 10px;
-}
-
-/* Animation Classes */
-.reveal-text, .reveal-element {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity var(--animation-timing) ease, transform var(--animation-timing) ease;
-}
-
-.reveal-text.active, .reveal-element.active {
-  opacity: 1;
-  transform: translateY(0);
+.card-buttons .btn {
+  width: 100%;
 }
 
 /* Responsive */
@@ -269,11 +179,11 @@ footer a:hover {
     flex-direction: column;
     position: absolute;
     top: 70px;
-    right: 20px;
     background: white;
     width: 200px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    right: 20px;
     padding: 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     text-align: center;
   }
 
@@ -284,38 +194,7 @@ footer a:hover {
   .menu-button {
     display: flex;
     position: absolute;
-    top: 20px;
     right: 20px;
-  }
-
-  .hero h1 {
-    font-size: 36px;
-  }
-
-  .hero p {
-    font-size: 18px;
-  }
-
-  .card-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero h1 {
-    font-size: 28px;
-  }
-
-  .hero p {
-    font-size: 16px;
-  }
-
-  .btn {
-    font-size: 14px;
-    padding: 8px 18px;
-  }
-
-  .tile {
-    padding: 60px 15px;
+    top: 20px;
   }
 }
